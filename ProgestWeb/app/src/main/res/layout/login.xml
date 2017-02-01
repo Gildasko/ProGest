@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:longClickable="false"
+    android:measureWithLargestChild="false"
+    android:touchscreenBlocksFocus="false"
+    android:theme="@style/AppTheme">
+
+
+    <ImageView
+        android:layout_marginTop="25dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/Logo"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:background="@drawable/logo_cesag"
+        android:baselineAlignBottom="false"
+        android:clickable="false"
+        android:cropToPadding="false"
+        android:focusable="false"
+        android:src="@id/Logo"
+        android:layout_weight="0.09"
+        android:layout_marginBottom="50dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="54dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView3"
+            android:background="@android:drawable/sym_action_email" />
+
+        <EditText
+
+            android:layout_width="306dp"
+            android:layout_height="fill_parent"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/Email"
+            android:text="Email"
+            android:singleLine="false"
+            android:selectAllOnFocus="false"
+            android:textColor="@color/abc_input_method_navigation_guard" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="337dp"
+        android:layout_height="54dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="15dp">
+
+        <ImageView
+            android:layout_width="56dp"
+            android:layout_height="match_parent"
+            android:id="@+id/imageView4"
+            android:background="@android:drawable/ic_lock_lock" />
+
+        <EditText
+            android:layout_width="305dp"
+            android:layout_height="58dp"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:id="@+id/editText5"
+            android:text="Mot de passe"
+            android:singleLine="false"
+            android:password="true"
+            android:selectAllOnFocus="false"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:layout_marginBottom="50dp"
+            android:phoneNumber="false"
+            android:linksClickable="false" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:layout_weight="0.21"
+        android:layout_marginTop="45dp"
+        android:layout_marginBottom="90dp">
+
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="Connexion"
+            android:id="@+id/button"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.14"
+            android:clickable="true"
+            android:textColor="@color/abc_input_method_navigation_guard"
+            android:textColorHighlight="@color/colorPrimary"
+            android:theme="@style/AppTheme.PopupOverlay"
+            android:typeface="normal"
+            android:visibility="visible"
+            android:textColorLink="@color/abc_search_url_text"
+            android:longClickable="true"
+            android:enabled="false"
+            android:background="@color/abc_search_url_text_normal"
+            android:layout_margin="100dp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Copyright 2016"
+        android:id="@+id/textView3"
+        android:layout_weight="0.05"
+        android:textAlignment="center" />
+
+</LinearLayout>
